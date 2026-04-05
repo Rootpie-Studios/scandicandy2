@@ -16,8 +16,8 @@ export default function OmOssPage() {
               Om oss.
             </h1>
             <p className="text-lg leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>
-              Scandi Candy är ett lokalt godisetillverkare baserat i Hököpinge,
-              Vellinge — specialiserade på gelatinfria konfektyrer som kombinerar
+              Scandi Candy är ett lokalt godisetillverkare baserat i Hököpinge
+              och Vellinge — specialiserade på gelatinfria konfektyrer som kombinerar
               skandinavisk enkelhet med äkta smaker.
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function OmOssPage() {
             {
               label: "Tillverkat i Sverige",
               color: "#2E7D32",
-              text: "Allt produceras i vår anläggning i Hököpinge, Vellinge. Kortare transportkedjor, lokal stolthet och full kontroll över kvaliteten.",
+              text: "Allt produceras i vår anläggning i Hököpinge och Vellinge. Kortare transportkedjor, lokal stolthet och full kontroll över kvaliteten.",
             },
             {
               label: "Kontraktstillverkning",

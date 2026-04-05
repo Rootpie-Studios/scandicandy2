@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <Image src="/logo.png" alt="Scandi Candy" width={90} height={63} className="mb-4 object-contain" />
           <p className="text-sm leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
-            Gelatinfritt godis tillverkat med omsorg i Hököpinge, Vellinge.
+            Gelatinfritt godis tillverkat med omsorg i Hököpinge och Vellinge.
           </p>
         </div>
 
@@ -37,13 +37,20 @@ export default function Footer() {
           <h3 className="text-xs font-bold tracking-widest uppercase mb-5" style={{ color: "rgba(255,255,255,0.35)" }}>
             Hitta oss
           </h3>
-          <address className="not-italic text-sm space-y-1">
-            <p className="font-semibold text-white">Scandi Candy</p>
-            <p style={{ color: "rgba(255,255,255,0.5)" }}>Bruksvägen 11</p>
-            <p style={{ color: "rgba(255,255,255,0.5)" }}>Hököpinge, Vellinge</p>
+          <address className="not-italic text-sm space-y-4">
+            <div>
+              <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: "rgba(255,255,255,0.25)" }}>Butik</p>
+              <p style={{ color: "rgba(255,255,255,0.5)" }}>Bruksvägen 11</p>
+              <p style={{ color: "rgba(255,255,255,0.5)" }}>235 42 Vellinge</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: "rgba(255,255,255,0.25)" }}>Bolagsadress</p>
+              <p style={{ color: "rgba(255,255,255,0.5)" }}>Terminalgatan 14</p>
+              <p style={{ color: "rgba(255,255,255,0.5)" }}>235 39 Vellinge</p>
+            </div>
             <a
               href="tel:040370550"
-              className="block mt-4 font-bold text-white hover:opacity-70 transition-opacity"
+              className="block font-bold hover:opacity-70 transition-opacity"
               style={{ color: "#FBBC0F" }}
             >
               040-370550
@@ -63,7 +70,7 @@ export default function Footer() {
         <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
           © {new Date().getFullYear()} Scandi Candy AB
         </p>
-        <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>Hököpinge, Sverige</p>
+        <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>Hököpinge och Vellinge, Sverige</p>
       </div>
     </footer>
   );

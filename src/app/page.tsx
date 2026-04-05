@@ -89,10 +89,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
           {[
             { icon: "✦", title: "Gelatinfritt", desc: "Allt godis är fritt från gelatin." },
-            { icon: "⌘", title: "Tillverkat i Sverige", desc: "Producerat i vår fabrik i Hököpinge, Vellinge." },
+            { icon: "⌘", title: "Tillverkat i Sverige", desc: "Producerat i vår fabrik i Hököpinge och Vellinge." },
             { icon: "◈", title: "FSSC 22000", desc: "Certifierade enligt internationell livsmedelssäkerhetsstandard." },
           ].map(({ icon, title, desc }) => (
-            <div key={title} className="px-8 py-8 first:pl-0 last:pr-0">
+            <div key={title} className="px-6 py-8 md:px-8">
               <div className="text-xl mb-3 font-bold" style={{ color: "#FBBC0F" }}>{icon}</div>
               <h3 className="text-white font-bold text-lg mb-2" style={{ fontFamily: "var(--font-rubik)" }}>{title}</h3>
               <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
@@ -163,7 +163,7 @@ export default function HomePage() {
               <div
                 key={p.name}
                 className="aspect-square relative rounded-2xl overflow-hidden"
-                style={{ backgroundColor: "#2A2A2A" }}
+                style={{ backgroundColor: "#F5EDD8" }}
               >
                 <Image src={p.src} alt={p.name} fill className="object-contain p-5" />
               </div>
@@ -177,8 +177,7 @@ export default function HomePage() {
               Lakrits som smakar på riktigt.
             </h2>
             <p className="leading-relaxed mb-8 text-lg" style={{ color: "rgba(255,255,255,0.55)" }}>
-              Söt, salt och violetlakrits gjord på lakritsvrot — i klassiska
-              former och överraskande smaker.
+              Söt och saltlakrits i många former och smaker.
             </p>
             <Link
               href="/produkter"
