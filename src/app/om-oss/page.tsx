@@ -64,7 +64,7 @@ export default function OmOssPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* FSSC */}
-            <div className="rounded-2xl p-8 flex flex-col gap-4" style={{ backgroundColor: "#2A2A2A" }}>
+            <div className="rounded-2xl p-8 flex flex-col justify-between gap-8" style={{ backgroundColor: "#F5EDD8" }}>
               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2E7D32" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
                   <path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -72,47 +72,43 @@ export default function OmOssPage() {
                 </svg>
               </div>
               <div>
-                <p className="font-extrabold text-xl text-white">FSSC 22000</p>
-                <p className="text-sm mt-2" style={{ color: "rgba(255,255,255,0.5)" }}>
+                <p className="font-extrabold text-2xl mb-2" style={{ color: "#1E1E1E" }}>FSSC 22000</p>
+                <p className="text-sm leading-relaxed" style={{ color: "rgba(30,30,30,0.5)" }}>
                   Foundation for Food Safety Systems Certification — internationellt erkänt ledningssystem för livsmedelssäkerhet.
                 </p>
               </div>
             </div>
 
-            {/* UC Sigill — both in one card */}
-            <div className="rounded-2xl p-8 flex flex-col items-center justify-center gap-6" style={{ backgroundColor: "#fff" }}>
-              <p className="text-xs font-bold tracking-widest uppercase" style={{ color: "rgba(30,30,30,0.4)" }}>
+            {/* UC Sigill */}
+            <div className="rounded-2xl p-8 flex flex-col justify-between gap-8" style={{ backgroundColor: "#F5EDD8" }}>
+              <p className="text-xs font-bold tracking-[0.25em] uppercase" style={{ color: "rgba(30,30,30,0.35)" }}>
                 UC Kreditvärdighet
               </p>
-              <div className="flex items-center justify-center gap-8">
-                <Image src="/imgs/UC_SIGILL-01-1.png" alt="UC Sigill — Högsta kreditvärdighet" width={400} height={400} className="object-contain" />
-                <Image src="/imgs/UC_SIGILL-02.png" alt="UC Sigill — Highest creditworthiness" width={400} height={400} className="object-contain" />
+              <div className="flex flex-col gap-5">
+                <div className="flex items-center gap-5">
+                  <div className="w-16 h-16 flex items-center justify-center shrink-0">
+                    <Image src="/imgs/uc-sigill-5.webp" alt="UC Sigill — Högsta kreditvärdighet" width={56} height={56} className="object-contain" />
+                  </div>
+                  <div>
+                    <p className="font-extrabold text-base" style={{ color: "#1E1E1E" }}>Högsta kreditvärdighet</p>
+                    <p className="text-sm mt-0.5" style={{ color: "rgba(30,30,30,0.45)" }}>UC Sigill</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-5">
+                  <div className="w-20 h-20 flex items-center justify-center shrink-0">
+                    <Image src="/imgs/uc-growth-cert.webp" alt="UC — Nordiskt tillväxtcertifikat" width={70} height={70} className="object-contain" />
+                  </div>
+                  <div>
+                    <p className="font-extrabold text-base" style={{ color: "#1E1E1E" }}>Nordiskt tillväxtcertifikat</p>
+                    <p className="text-sm mt-0.5" style={{ color: "rgba(30,30,30,0.45)" }}>UC Sigill</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── LOCATION POINTER ── */}
-      <section className="pb-12 max-w-7xl mx-auto px-6">
-        <div className="rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-6" style={{ backgroundColor: "#FBBC0F" }}>
-          <div>
-            <p className="text-xs font-bold tracking-[0.25em] uppercase mb-2" style={{ color: "rgba(30,30,30,0.5)" }}>Besök oss</p>
-            <p className="font-extrabold text-xl" style={{ color: "#1E1E1E" }}>Bruksvägen 11, Hököpinge</p>
-            <a href="tel:040370550" className="text-sm font-bold mt-1 hover:opacity-70 transition-opacity block" style={{ color: "rgba(30,30,30,0.7)" }}>040-370550</a>
-          </div>
-          <Link
-            href="/kontakt"
-            className="shrink-0 inline-flex items-center gap-2 px-8 py-4 font-bold text-sm tracking-wider uppercase hover:opacity-85 transition-opacity rounded-full"
-            style={{ backgroundColor: "#1E1E1E", color: "#FBBC0F" }}
-          >
-            Karta &amp; öppettider
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
